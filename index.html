@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposals for Listening</title>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+            background-color: #000;
+            color: #fff;
+        }
+        .proposal {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 20px 0;
+            padding: 15px;
+        }
+        .footer {
+            margin-top: 60px;
+            font-size: 14px;
+            text-align: left;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <div class="proposal" id="proposal-text">Loading...</div>
+    <div class="footer">
+        <p><strong>Proposal for Listening – a possible definition:</strong></p>
+        <p>A generative invitation to attune to sound, silence, and resonance as a way of being and relating. A proposal for listening is not merely a suggestion but a call to engage with listening as a mode and practice of reorienting one’s perception, connection, and understanding. It can manifest as an idea, an action, or a framework, expanding how we listen and what listening makes possible in communal, artistic, and everyday contexts.</p>
+        <p>Proposals for Listening is put forward due to hopeful, curious and a critical engagement with our world; they seek to affect through speculation or manifestation.</p>
+    </div>
+    <script>
+        const proposals = [
+            "Close your eyes and listen to the wind.",
+            "Find the quietest sound in the room.",
+            "Listen to the rhythm of your own breath.",
+            "Pay attention to the sounds of your footsteps.",
+            "Try to hear the furthest sound from where you are.",
+            "Imagine what silence sounds like.",
+            "Listen to the space between the sounds.",
+            "Hear the world as if you are inside a song."
+        ];
+
+        function getRandomProposal() {
+            const randomIndex = Math.floor(Math.random() * proposals.length);
+            document.getElementById("proposal-text").innerText = proposals[randomIndex];
+        }
+
+        window.onload = getRandomProposal;
+    </script>
+</body>
+</html>
