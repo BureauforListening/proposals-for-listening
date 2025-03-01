@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposals for Listening</title>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+            background-color: #222;
+            color: #f4f4f4;
+        }
+        .proposal {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 50px 0;
+            padding: 30px;
+            border: 2px solid #f4f4f4;
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .footer {
+            margin-top: 80px;
+            font-size: 16px;
+            text-align: center;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #ccc;
+            border-top: 1px solid #666;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="proposal" id="proposal-text">Loading...</div>
+    <div class="footer">
+        <p><strong>Proposal for Listening – a possible definition:</strong></p>
+        <p>A generative invitation to attune to sound, silence, and resonance as a way of being and relating. A proposal for listening is not merely a suggestion but a call to engage with listening as a mode and practice of reorienting one’s perception, connection, and understanding. It can manifest as an idea, an action, or a framework, expanding how we listen and what listening makes possible in communal, artistic, and everyday contexts.</p>
+        <p>Proposals for Listening is put forward due to hopeful, curious, and critical engagement with our world; they seek to affect through speculation or manifestation.</p>
+    </div>
+    <script>
+        const proposals = [
+            "We propose to reserve one day every week for a day of silence. We propose to make every Tuesday a day for silence. This day could, with time, become a day of listening. Like a day of fasting.",
+            "We propose to include listening as a human right in our national constitutions. And if it proves difficult to get our politicians on board, we propose to protest by listening, and by denying listening to those who we oppose, as in the ancient play Lysistrata by Aristophanes, where Greek women denied their men sex to stop a war. We are unsure of the consequences of weaponizing listening.",
+            "We propose a full-time job position as a public listener. We also propose to make it possible for anyone to apply for public listening funding for up to six months, where one can spend their time listening before returning to a previous occupation.",
+            "We propose to have a burial ceremony for listening, where we will be listening for one minute carefully and respectfully for the ceased listening.",
+            "We propose an epic battle for listening, set in a landscape with big grass fields surrounded by snow-covered mountains. Thousands of extras holding the stand together, listening as the sun sets behind the flanks, awaiting the attack of the ignorant hordes… We propose a victory for the listeners.",
+            "We propose a pause for reevaluation.",
+            "We propose a silent dinner.",
+            "We propose that you trust, as we enter a space and time for listening.",
+            "We propose we offer each other care and healing in the form of listening rather than in the form of industrially produced pills.",
+            "We propose new classes and courses in our schools focusing on the act of listening, where the teachers are not experts, but good friends.",
+            "We propose to cover all commercial posters with a new poster asking: ‘What if I listened to you?’",
+            "We propose a world museum for listening, located outside of Europe and preferably not in a city. A traveling version of the museum should also exist.",
+            "We propose more blank pages in books as a gesture and reminder for listening.",
+            "We propose to start the day with listening.",
+            "We propose to send listeners rather than spies.",
+            "We propose a city council where each meeting includes an obligatory moment for listening.",
+            "We propose to listen, to face the truth, to live.",
+            "We propose to never stop listening.",
+            "We propose not to associate a color with listening.",
+            "We propose to make a soundproof and soundless room, which you can enter at your own risk, used for both torture and pleasure.",
+            "We propose a children's game where different players must collaborate to foster listening. (We propose the children's game is played by adults.)",
+            "We propose to include listening as an Olympic discipline.",
+            "We propose to tax those who don't listen, with a variable taxation between 5-60%.",
+            "We propose to build a temple for listening in silence.",
+            "We propose sending out letters with manuals for, poems about, and invitations to listening.",
+            "We propose a national day of listening observed in every country, where all government institutions close and citizens engage in collective silence.",
+            "We propose to introduce a ‘Listening Newspaper’ that prioritizes unheard voices, reporting only through deep listening.",
+            "We propose a mission for space exploration where the primary objective is not discovery, but listening to the hum of the cosmos.",
+            "We propose a comedy show where the punchlines are delivered in silence, requiring the audience to listen to body language and expression.",
+            "We propose listening as activism.",
+            "We propose a revolution by listening."
+        ];
+
+        function getRandomProposal() {
+            const randomIndex = Math.floor(Math.random() * proposals.length);
+            document.getElementById("proposal-text").innerText = proposals[randomIndex];
+        }
+
+        window.onload = getRandomProposal;
+    </script>
+</body>
+</html>
